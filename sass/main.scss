@@ -1,14 +1,14 @@
 // UTILS
 
-@import url(./utils/_visualy-hidden.scss);
-@import url(./utils/_variables.scss);
+@import "./utils/_visualy-hidden.scss";
+@import "./utils/_variables.scss";
 
 //BASE
 
-@import url(.base/common);
-@import url(.base/container);
+@import ".base/_common.scss";
+@import ".base/container";
 
 // COMPONENTS
 
-@import url(./components/_button-service.scss);
-@import url(./components/_backgraund.scss);
+@import "./components/_button-service.scss";
+@import "./components/_backgraund.scss";
