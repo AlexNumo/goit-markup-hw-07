@@ -1,14 +1,26 @@
 // UTILS
 
-@import "./utils/_visualy-hidden.scss";
-@import "./utils/_variables.scss";
+@import "./utils/visualy-hidden";
+@import "./utils/variables";
 
-//BASE
-
-@import ".base/_common.scss";
-@import ".base/container";
+// BASE
+@import "./base/common";
+@import "./base/container";
 
 // COMPONENTS
 
-@import "./components/_button-service.scss";
-@import "./components/_backgraund.scss";
+@import "./components/active-page";
+@import "./components/button-service";
+@import "./components/backgraund";
+
+// LAYOUT
+
+@import "./layout/backdrop";
+@import "./layout/header";
+@import "./layout/hero";
+@import "./layout/ways-for-bussines";
+@import "./layout/our-work";
+@import "./layout/our-team";
+@import "./layout/our-clients";
+@import "./layout/footer";
+@import "./layout/portfolio";

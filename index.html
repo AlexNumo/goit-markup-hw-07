@@ -20,8 +20,8 @@
                 <a href="index.html"><span class="logo__three-letters">Web</span>Studio</a>
                 <ul class="navigation-link">
                     <li class="navigation-link__position active-page"><a class="navigation-bar__studio" href="index.html">Студия</a></li>
-                    <li class="navigation-link__position"><a class="navigation-bar-portfolio" href="portfolio.html">Портфолио</a></li>
-                    <li class="navigation-link__position"><a class="navigation-bar-contacts" href="">Контакты</a></li>
+                    <li class="navigation-link__position"><a class="navigation-bar__portfolio" href="portfolio.html">Портфолио</a></li>
+                    <li class="navigation-link__position"><a class="navigation-bar__contacts" href="">Контакты</a></li>
                 </ul>
             </nav>
                 <div class="mail-phone__position">
@@ -267,52 +267,52 @@
     </section>
 
 <!--========FOOTER========================-->      
-    <footer class="footer-position">
+    <footer class="footer__position">
         <div class="container">
-            <div class="position-address-link">
+            <div class="footer__position-address-link">
                 <a class="footer-link" href="index.html"><span class="logo-three-letters">Web</span>Studio</a>
-                <h2 class="link-sign">присоединяйтесь</h2>
-                <p class="subscribe-position">Подпишитесь на рассылку</p>
+                <h2 class="footer__link-sign">присоединяйтесь</h2>
+                <p class="footer__subscribe-position">Подпишитесь на рассылку</p>
             </div>
-            <div class="footer-position-link-sign">
-                <address class="address-position">
-                    <p class="footer-living">г. Киев, пр-т Леси Украинки, 26</p>
+            <div class="footer__position-link-sign">
+                <address>
+                    <p class="footer__living">г. Киев, пр-т Леси Украинки, 26</p>
                     <ul>    
-                        <li class="address-mail-position"><a class="address-mail" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                        <li class="address-phone-position"><a class="address-phone" href="tel:+380961111111">+38 096 111 11 11</a></li>
+                        <li class="footer-address__mail-position"><a class="address-mail" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                        <li class="footer-address__phone-position"><a class="address-phone" href="tel:+380961111111">+38 096 111 11 11</a></li>
                     </ul>
                 </address>
-                    <div class="sign-logo-position">
-                        <a class="sign-logo-background" href="./">
-                            <svg class="sign-logo" width=20px height=20px>
+                    <div class="footer__sign-logo-position">
+                        <a class="footer__sign-logo-background" href="./">
+                            <svg class="footer__sign-logo" width=20px height=20px>
                                 <use href="./img/sprite.svg#instagram"></use>
                             </svg>
                         </a>
-                        <a class="sign-logo-background" href="./">
-                            <svg class="sign-logo" width=20px height=20px>
+                        <a class="footer__sign-logo-background" href="./">
+                            <svg class="footer__sign-logo" width=20px height=20px>
                                 <use href="./img/sprite.svg#twitter"></use>
                             </svg>
                         </a>
-                        <a class="sign-logo-background" href="./">
-                            <svg class="sign-logo" width=20px height=20px>
+                        <a class="footer__sign-logo-background" href="./">
+                            <svg class="footer__sign-logo" width=20px height=20px>
                                 <use href="./img/sprite.svg#facebook"></use>
                             </svg>
                         </a>
-                        <a class="sign-logo-background" href="./">
-                            <svg class="sign-logo" width=20px height=20px>
+                        <a class="footer__sign-logo-background" href="./">
+                            <svg class="footer__sign-logo" width=20px height=20px>
                                 <use href="./img/sprite.svg#linkedin"></use>
                             </svg>
                         </a>
                     </div>
                     <label class="footer-subscribe">
-                        <span class="footer-subscribe-input-position">
-                            <input type="text" class="footer-subscribe-input" name="mail-client-subscribe" minlength="5"
+                        <span>
+                            <input type="text" class="footer-subscribe__input" name="mail-client-subscribe" minlength="5"
                                 pattern="[a-zA-Za-0-9]-[@]-[a-zA-Za]-[.]-[a-zA-Za]" placeholder="E-mail"
                                 title="Почта должна содержать символы латиницы с использованием знака @" required>
                         </span>
                     </label>
-                    <button type="submit" class="footer-subscribe-button">Подписаться
-                        <svg class="footer-subscribe-icon" width=24px height=24px>
+                    <button type="submit" class="footer-subscribe__button">Подписаться
+                        <svg class="footer-subscribe__icon" width=24px height=24px>
                             <use href="./img/sprite.svg#send"></use>
                         </svg>
                     </button>
@@ -335,47 +335,47 @@
             </button>
             <form action="#" class="position-form">
                 <p class="data-form">Оставьте свои данные, мы вам перезвоним</p>
-                <label class="modal-form-position">
+                <label class="modal-form__position">
                     Имя
-                    <span class="modal-form-position-name">
-                        <input type="text" class="modal-input-form" name="user-name" minlength="2" pattern="[a-zA-Za-яёА-ЯЁ]+"
+                    <span class="modal-form__position-name">
+                        <input type="text" class="modal__input-form" name="user-name" minlength="2" pattern="[a-zA-Za-яёА-ЯЁ]+"
                             title="Имя должно содержать символы кирилицы или латиницы" required>
-                        <svg class="modal-form-icon" width=12px height=12px>
+                        <svg class="modal-form__icon" width=12px height=12px>
                             <use href="./img/sprite.svg#name"></use>
                         </svg>
                     </span>
                 </label>
-                <label class="modal-form-position">
+                <label class="modal-form__position">
                     Телефон
-                    <span class="modal-form-position-name">
-                        <input type="text" class="modal-input-form" name="number-client" minlength="7" pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+                    <span class="modal-form__position-name">
+                        <input type="text" class="modal__input-form" name="number-client" minlength="7" pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
                             title="096-000-00-00" required>
-                        <svg class="modal-form-icon" width=13px height=13px>
+                        <svg class="modal-form__icon" width=13px height=13px>
                             <use href="./img/sprite.svg#phonenumber"></use>
                         </svg>
                     </span>
                 </label>
-                <label class="modal-form-position">
+                <label class="modal-form__position">
                     Почта
-                    <span class="modal-form-position-name">
-                        <input type="text" class="modal-input-form" name="mail-client" minlength="5"
+                    <span class="modal-form__position-name">
+                        <input type="text" class="modal__input-form" name="mail-client" minlength="5"
                             pattern="[a-zA-Za-0-9]-[@]-[a-zA-Za]-[.]-[a-zA-Za]" title="Почта должна содержать символы латиницы с использованием знака @" required>
-                        <svg class="modal-form-icon" width=15px height=12px>
+                        <svg class="modal-form__icon" width=15px height=12px>
                             <use href="./img/sprite.svg#email"></use>
                         </svg>
                     </span>
                 </label>
-                <label class="modal-form-position">
+                <label class="modal-form__position">
                     Комментарий
-                    <textarea name="user-message" class="modal-textarea-form" placeholder="Введите текст"></textarea>
+                    <textarea name="user-message" class="modal__textarea-form" placeholder="Введите текст"></textarea>
                 </label>
-                <label class="modal-button-position">
-                    <input type="checkbox" class="modal-form-checkbox visually-hidden" id="accept-policy">
-                    <label for="accept-policy" class="modal-form-checkbox-label">&nbsp;Соглашаюсь с рассылкой и принимаю&nbsp; 
-                        <a href="#" class="modal-form-label-link">Условия договора</a></label>
+                <label class="modal-button__position">
+                    <input type="checkbox" class="modal-form__checkbox visually-hidden" id="accept-policy">
+                    <label for="accept-policy" class="modal-form__checkbox-label">&nbsp;Соглашаюсь с рассылкой и принимаю&nbsp; 
+                        <a href="#" class="modal-form__label-link">Условия договора</a></label>
                     
                 </label>
-                <button type="submit" class="modal-form-button">Отправить</button>
+                <button type="submit" class="modal-form__button">Отправить</button>
             </form>
         </div>
     </div>

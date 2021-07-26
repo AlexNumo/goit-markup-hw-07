@@ -1,0 +1,176 @@
+.footer__position {
+  background-color: #2f303a;
+  padding-bottom: 60px;
+  padding-top: 60px;
+}
+
+.footer-link {
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+}
+
+.footer__living {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  margin-top: 20px;
+  width: 231px;
+}
+
+.address-mail {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.72;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.address-phone {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.72;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-address__mail-position {
+  margin-top: 9px;
+}
+
+.footer-address__phone-position {
+  margin-top: 9px;
+}
+
+.footer__link-sign {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-left: 156px;
+}
+
+.footer__position-address-link {
+  display: flex;
+  align-items: baseline;
+}
+
+.footer__position-link-sign {
+  display: flex;
+}
+
+.footer__sign-logo-position {
+  display: flex;
+  margin-left: 70px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.footer__sign-logo-background {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  border-radius: 50px;
+  background-color: rgba(255, 255, 255, 0.1);
+  transition-duration: 250ms;
+  transition-timing-function: (0.4, 0, 0.2, 1);
+}
+
+.footer__sign-logo-background:not(:nth-last-child(1)) {
+  margin-right: 10px;
+}
+
+.footer__sign-logo {
+  fill: #ffffff;
+}
+
+.footer__sign-logo-background:hover,
+.footer__sign-logo-background:focus {
+  background-color: var(--main-color-hover-focus);
+}
+
+.footer__subscribe-position{
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin-left: 154px;
+}
+
+.footer-subscribe{
+  margin-left: 93px;
+  margin-top: 20px;
+}
+
+.footer-subscribe__input{
+  background-color: #2f303a;
+  width: 358px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+  padding-top: 15px;
+  padding-left: 16px;
+  padding-bottom: 15px;
+}
+
+.footer-subscribe__button{
+  position: relative;
+  background: #2196F3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  width: 200px;
+  height: 50px;
+  margin-left: 12px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  color: #FFFFFF;
+  border: 0px;
+}
+
+.footer-subscribe__icon{
+  fill: #ffffff;
+  margin-left: 10px;
+}
