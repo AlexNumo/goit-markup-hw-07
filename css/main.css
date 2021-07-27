@@ -165,8 +165,7 @@ textarea {
   align-items: center;
 }
 
-.close-button:hover,
-.close-button:focus {
+.close-button:hover, .close-button:focus {
   fill: var(--main-color-hover-focus);
 }
 
@@ -214,16 +213,8 @@ textarea {
   margin-top: 4px;
 }
 
-.modal-form__position-name:hover .modal-form__icon,
-.modal-form__position-name:focus .modal-form__icon {
+.modal-form__position-name:hover .modal-form__icon, .modal-form__position-name.modal-form__icon {
   fill: var(--main-color-hover-focus);
-  cursor: pointer;
-  transition-timing-function: 0.4, 0, 0.2, 1;
-}
-
-.modal__input-form:hover,
-.modal__input-form:focus {
-  border-color: var(--main-color-hover-focus);
   cursor: pointer;
   transition-timing-function: 0.4, 0, 0.2, 1;
 }
@@ -238,6 +229,12 @@ textarea {
   padding-left: 42px;
   cursor: pointer;
   transition-duration: 250ms;
+}
+
+.modal__input-form:hover, .modal__input-form:focus {
+  border-color: var(--main-color-hover-focus);
+  cursor: pointer;
+  transition-timing-function: 0.4, 0, 0.2, 1;
 }
 
 .modal-form__icon {
@@ -259,8 +256,7 @@ textarea {
   cursor: pointer;
 }
 
-.modal__textarea-form:hover,
-.modal__textarea-form:focus {
+.modal__textarea-form:hover, .modal__textarea-form:focus {
   border-color: var(--main-color-hover-focus);
   transition-duration: 250ms;
 }
@@ -278,8 +274,25 @@ textarea {
   justify-content: center;
 }
 
+.modal-form__checkbox-label::before {
+  display: block;
+  content: "";
+  border-radius: 2px;
+  border: 1px solid var(--main-color);
+  width: 16px;
+  height: 15px;
+  cursor: pointer;
+}
+
 .modal-form__checkbox {
   margin-top: 20px;
+}
+
+.modal-form__checkbox:checked + .modal-form__checkbox-label::before {
+  box-shadow: inset 0 0 0 1px var(--main-color-hover-focus);
+  background-image: url("../img/Vector.svg");
+  background-position: 1px 2px;
+  background-color: var(--main-color-hover-focus);
 }
 
 .modal-form__button {
@@ -302,8 +315,7 @@ textarea {
   transition-duration: 250ms;
 }
 
-.modal-form__button:hover,
-.modal-form__button:focus {
+.modal-form__button:hover, .modal-form__button:focus {
   background-color: var(--color-btn-for-active);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
@@ -313,23 +325,6 @@ textarea {
 .modal-form__label-link {
   text-decoration: underline;
   color: var(--main-color-hover-focus);
-}
-
-.modal-form__checkbox-label::before {
-  display: block;
-  content: "";
-  border-radius: 2px;
-  border: 1px solid var(--main-color);
-  width: 16px;
-  height: 15px;
-  cursor: pointer;
-}
-
-.modal-form__checkbox:checked + .modal-form__checkbox-label::before {
-  box-shadow: inset 0 0 0 1px var(--main-color-hover-focus);
-  background-image: url("../img/Vector.svg");
-  background-position: 1px 2px;
-  background-color: var(--main-color-hover-focus);
 }
 
 .modal-button__position {
@@ -349,25 +344,25 @@ textarea {
   margin-top: 24px;
 }
 
-.position-header {
-  display: flex;
-  height: 80px;
+.navigation-bar a {
+  color: var(--color-for-links-of-navigation);
 }
 
-.navigation-link {
-  font-family: var(--secondary-main-font-family);
-  font-style: var(--main-font-style);
-  font-weight: var(--thread-font-weight);
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
+.navigation-bar__contacts, .navigation-bar__portfolio, .navigation-bar__studio {
   color: var(--main-color);
-  display: flex;
-  margin-top: 8px;
-  margin-left: 93px;
+  transition-duration: 250ms;
+  transition-timing-function: 0.4, 0, 0.2, 1;
 }
 
-.mail-link {
+.navigation-bar__contacts:hover, .navigation-bar__portfolio:hover, .navigation-bar__studio:hover {
+  color: var(--main-color-hover-focus);
+}
+
+.navigation-bar__contacts:focus, .navigation-bar__portfolio:focus, .navigation-bar__studio:focus {
+  color: var(--main-color-hover-focus);
+}
+
+.navigation-bar__mail-phone {
   font-family: var(--secondary-main-font-family);
   font-style: var(--main-font-style);
   font-weight: var(--thread-font-weight);
@@ -384,18 +379,42 @@ textarea {
   transition-timing-function: 0.4, 0, 0.2, 1;
 }
 
-.phone-link {
+.navigation-bar__mail-phone:hover {
+  color: var(--main-color-hover-focus);
+}
+
+.navigation-bar__mail-phone:hover svg {
+  fill: var(--main-color-hover-focus);
+}
+
+.navigation-bar__mail-phone:focus {
+  color: var(--main-color-hover-focus);
+}
+
+.navigation-bar__mail-phone:focus svg {
+  fill: var(--main-color-hover-focus);
+}
+
+.navigation-bar__mail-phone:focus {
+  fill: var(--main-color-hover-focus);
+}
+
+.position-header {
+  display: flex;
+  height: 80px;
+}
+
+.navigation-link {
   font-family: var(--secondary-main-font-family);
   font-style: var(--main-font-style);
   font-weight: var(--thread-font-weight);
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: var(--secondary-color-for-text);
+  color: var(--main-color);
   display: flex;
-  flex-direction: row-reverse;
-  transition-duration: 250ms;
-  transition-timing-function: 0.4, 0, 0.2, 1;
+  margin-top: 8px;
+  margin-left: 93px;
 }
 
 .navigation-link__position:not(:last-child) {
@@ -419,69 +438,8 @@ textarea {
   margin-right: 30px;
 }
 
-.position-link-phone {
-  display: flex;
-}
-
-.navigation-bar a {
-  color: var(--color-for-links-of-navigation);
-}
-
-.navigation-bar__contacts {
-  color: var(--main-color);
-  transition-duration: 250ms;
-  transition-timing-function: 0.4, 0, 0.2, 1;
-}
-
-.navigation-bar__studio {
-  color: var(--main-color);
-  transition-duration: 250ms;
-  transition-timing-function: 0.4, 0, 0.2, 1;
-}
-
-.navigation-bar__portfolio {
-  color: var(--main-color);
-  transition-duration: 250ms;
-  transition-timing-function: 0.4, 0, 0.2, 1;
-}
-
 .logo__three-letters {
   color: var(--main-color-hover-focus);
-}
-
-.navigation-bar__studio:hover,
-.navigation-bar__portfolio:hover,
-.navigation-bar__contacts:hover,
-.mail-link:hover,
-.phone-link:hover {
-  color: var(--main-color-hover-focus);
-}
-
-.mail-link:hover svg,
-.phone-link:hover svg {
-  fill: var(--main-color-hover-focus);
-}
-
-.navigation-bar__portfolio:focus,
-.navigation-bar__studio:focus,
-.navigation-bar__contacts:focus,
-.mail-link:focus,
-.phone-link:focus {
-  color: var(--main-color-hover-focus);
-}
-
-.mail-link:focus,
-.phone-link:focus {
-  color: var(--main-color-hover-focus);
-}
-
-.mail-link:focus svg,
-.phone-link:focus svg {
-  fill: var(--main-color-hover-focus);
-}
-
-.mail-link:focus {
-  fill: var(--main-color-hover-focus);
 }
 
 .business {
@@ -558,7 +516,7 @@ textarea {
 }
 
 .our-work-position {
-  padding-bottom: 94px;
+  padding-bottom: 22px;
 }
 
 .our-work {
@@ -675,10 +633,8 @@ textarea {
   margin-right: 10px;
 }
 
-.member-logo {
-  fill: var(--color-clients-logo);
-  transition-duration: 250ms;
-  transition-timing-function: 0.4, 0, 0.2, 1;
+.member-logo-background:hover, .member-logo-background:focus {
+  background-color: var(--main-color-hover-focus);
 }
 
 .member-logo-background:hover .member-logo,
@@ -686,9 +642,10 @@ textarea {
   fill: var(--background-color-member-card);
 }
 
-.member-logo-background:hover,
-.member-logo-background:focus {
-  background-color: var(--main-color-hover-focus);
+.member-logo {
+  fill: var(--color-clients-logo);
+  transition-duration: 250ms;
+  transition-timing-function: 0.4, 0, 0.2, 1;
 }
 
 .our-clients {
@@ -711,7 +668,7 @@ textarea {
   display: flex;
 }
 
-.clients-logo-position {
+.clients-logo__position {
   display: flex;
   margin-top: 50px;
   width: 170px;
@@ -725,8 +682,13 @@ textarea {
   transition-timing-function: 0.4, 0, 0.2, 1;
 }
 
-.clients-logo-position:not(:nth-last-child(1)) {
+.clients-logo__position:not(:nth-last-child(1)) {
   margin-right: 30px;
+}
+
+.clients-logo__position:hover .clients-logo,
+.clients-logo__position:focus .clients-logo {
+  fill: var(--main-color-hover-focus);
 }
 
 .clients-logo {
@@ -735,15 +697,9 @@ textarea {
   transition-timing-function: 0.4, 0, 0.2, 1;
 }
 
-.clients-logo-position:hover,
-.clients-logo-position:focus {
+.clients-logo__position:hover, .clients-logo__position:focus {
   border: 1px solid;
   border-color: var(--main-color-hover-focus);
-}
-
-.clients-logo-position:hover .clients-logo,
-.clients-logo-position:focus .clients-logo {
-  fill: var(--main-color-hover-focus);
 }
 
 .footer__position {
@@ -847,13 +803,12 @@ textarea {
   margin-right: 10px;
 }
 
-.footer__sign-logo {
-  fill: var(--color-text-for-dark-theme);
+.footer__sign-logo-background:hover, .footer__sign-logo-background:focus {
+  background-color: var(--main-color-hover-focus);
 }
 
-.footer__sign-logo-background:hover,
-.footer__sign-logo-background:focus {
-  background-color: var(--main-color-hover-focus);
+.footer__sign-logo {
+  fill: var(--color-text-for-dark-theme);
 }
 
 .footer__subscribe-position {
@@ -951,7 +906,7 @@ textarea {
   margin-left: -30px;
 }
 
-.content-border {
+.content__border {
   border-bottom: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
@@ -986,24 +941,14 @@ textarea {
   border: 0px;
   transition-duration: 250ms;
   transition-timing-function: 0.4, 0, 0.2, 1;
-}
-
-.portfolio__button-service:hover {
-  background: var(--main-color-hover-focus);
-  color: var(--color-text-for-dark-theme);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-  border-radius: 4px;
-}
-
-.portfolio__button-service:focus {
-  background: var(--main-color-hover-focus);
-  color: var(--color-text-for-dark-theme);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-  border-radius: 4px;
-}
-
-.portfolio__button-service {
   cursor: pointer;
+}
+
+.portfolio__button-service:hover, .portfolio__button-service:focus {
+  background: var(--main-color-hover-focus);
+  color: var(--color-text-for-dark-theme);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
 }
 
 .overlay {
@@ -1012,7 +957,7 @@ textarea {
   font-style: var(--main-font-style);
   font-weight: var(--secondary-font-weight);
   font-size: 18px;
-  line-height: 1, 56;
+  line-height: 1.56;
   letter-spacing: 0.03em;
   color: var(--color-text-for-dark-theme);
   background-color: rgba(33, 150, 243, 0.9);
@@ -1040,7 +985,7 @@ textarea {
   transform: translateY(0%);
 }
 
-.name-content {
+.content__name {
   font-family: var(--secondary-main-font-family);
   font-style: var(--main-font-style);
   font-weight: var(--main-font-weight);

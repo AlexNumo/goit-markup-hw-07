@@ -13,10 +13,9 @@
 
 .ways-card-position {
   width: 270px;
-}
-
-.ways-card-position:not(:nth-last-child(1)) {
-  margin-right: 30px;
+    &:not(:nth-last-child(1)) {
+      margin-right: 30px;
+    }
 }
 
 .ways {

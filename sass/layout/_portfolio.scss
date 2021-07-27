@@ -26,7 +26,7 @@
   margin-left: -30px;
 }
 
-.content-border {
+.content__border {
   border-bottom: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
@@ -62,26 +62,16 @@
   border: 0px;
   transition-duration: 250ms;
   transition-timing-function: (0.4, 0, 0.2, 1);
-}
-
-.portfolio__button-service:hover {
-  background: var(--main-color-hover-focus);
-  color: var(--color-text-for-dark-theme);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
-  border-radius: 4px;
-}
-
-.portfolio__button-service:focus {
-  background: var(--main-color-hover-focus);
-  color: var(--color-text-for-dark-theme);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
-  border-radius: 4px;
-}
-
-.portfolio__button-service {
   cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background: var(--main-color-hover-focus);
+    color: var(--color-text-for-dark-theme);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+  }
 }
 
 .overlay {
@@ -90,7 +80,7 @@
   font-style: var(--main-font-style);
   font-weight: var(--secondary-font-weight);
   font-size: 18px;
-  line-height: 1, 56;
+  line-height: 1.56;
   letter-spacing: 0.03em;
   color: var(--color-text-for-dark-theme);
   background-color: rgba(33, 150, 243, 0.9);
@@ -118,7 +108,7 @@
   transform: translateY(0%);
 }
 
-.name-content {
+.content__name {
   font-family: var(--secondary-main-font-family);
   font-style: var(--main-font-style);
   font-weight: var(--main-font-weight);
