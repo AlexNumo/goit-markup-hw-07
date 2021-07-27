@@ -20,9 +20,9 @@
 }
 
 .ways {
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
-  font-weight: 700;
+  font-family: var(--secondary-main-font-family);
+  font-style: var(--main-font-style);
+  font-weight: var(--main-font-weight);
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
@@ -32,24 +32,24 @@
 }
 
 .ways-option {
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
-  font-weight: 400;
+  font-family: var(--secondary-main-font-family);
+  font-style: var(--main-font-style);
+  font-weight: var(--secondary-font-weight);
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.03em;
-  color: #757575;
+  color: var(--secondary-color-for-text);
   text-transform: none;
 }
 
 .ways-logo {
-  background-color: #f5f4fa;
+  background-color: var(--background-color-ways-logo);
   border-radius: 4px;
 }
 
 .ways-logo-position {
   display: flex;
-  background-color: #f5f4fa;
+  background-color: var(--background-color-ways-logo);
   border-radius: 4px;
   width: 270px;
   height: 120px;

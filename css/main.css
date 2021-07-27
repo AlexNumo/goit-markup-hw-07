@@ -16,13 +16,24 @@
 :root {
   --main-color: #212121;
   --main-color-hover-focus: #2196f3;
-}
-
-body {
-  color: black;
-  font-family: "Raleway", sans-serif;
-  font-style: normal;
-  font-weight: 700;
+  --secondary-color-for-text: #757575;
+  --main-font-family: "Raleway", sans-serif;
+  --main-font-style: normal;
+  --main-font-weight: 700;
+  --secondary-font-weight: 400;
+  --thread-font-weight: 500;
+  --forthly-font-weight: 900;
+  --secondary-main-font-family: "Roboto", sans-serif;
+  --color-btn-for-active: #188ce8;
+  --footer-background: #2f303a;
+  --color-text-for-dark-theme: #ffffff;
+  --background-color-for-backdrop: #ffffff;
+  --color-for-radius-subscribe: #2f303a;
+  --color-for-links-of-navigation: #000000;
+  --color-clients-logo: #afb1b8;
+  --background-color-our-team: #f5f4fa;
+  --background-color-member-card: #ffffff;
+  --background-color-ways-logo: #f5f4fa;
 }
 
 a {
@@ -64,22 +75,22 @@ textarea {
 .active-page::after {
   display: flex;
   content: "";
-  background-color: #2196f3;
+  background-color: var(--main-color-hover-focus);
   border-radius: 2px;
   margin-top: 28px;
   height: 4px;
 }
 
 .button-service {
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
-  font-weight: 700;
+  font-family: var(--secondary-main-font-family);
+  font-style: var(--main-font-style);
+  font-weight: var(--main-font-weight);
   font-size: 16px;
   line-height: 1.88;
   display: flex;
   letter-spacing: 0.06em;
-  color: #ffffff;
-  background-color: #2196f3;
+  color: var(--color-text-for-dark-theme);
+  background-color: var(--main-color-hover-focus);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border: 0px;
@@ -131,7 +142,7 @@ textarea {
   top: 50%;
   width: 528px;
   height: 581px;
-  background-color: #ffffff;
+  background-color: var(--background-color-for-backdrop);
   transform: translate(-50%, -50%);
   animation-name: animation-backdrop;
   animation-duration: 300ms;
@@ -174,9 +185,9 @@ textarea {
 }
 
 .data-form {
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
-  font-weight: 700;
+  font-family: var(--secondary-main-font-family);
+  font-style: var(--main-font-style);
+  font-weight: var(--main-font-weight);
   font-size: 20px;
   line-height: 1.15;
   text-align: center;
@@ -188,13 +199,13 @@ textarea {
   display: flex;
   flex-direction: column;
   margin-top: 12px;
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
+  font-family: var(--secondary-main-font-family);
+  font-style: var(--main-font-style);
   font-weight: 400;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
-  color: #757575;
+  color: var(--secondary-color-for-text);
 }
 
 .modal-form__position-name {
@@ -255,13 +266,13 @@ textarea {
 }
 
 .modal-form__checkbox-label {
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
+  font-family: var(--secondary-main-font-family);
+  font-style: var(--main-font-style);
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: #757575;
+  color: var(--secondary-color-for-text);
   display: flex;
   align-items: baseline;
   justify-content: center;
@@ -272,14 +283,14 @@ textarea {
 }
 
 .modal-form__button {
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
-  font-weight: 700;
+  font-family: var(--secondary-main-font-family);
+  font-style: var(--main-font-style);
+  font-weight: var(--main-font-weight);
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
-  color: #ffffff;
-  background-color: #2196f3;
+  color: var(--color-text-for-dark-theme);
+  background-color: var(--main-color-hover-focus);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border: 0px;
@@ -293,7 +304,7 @@ textarea {
 
 .modal-form__button:hover,
 .modal-form__button:focus {
-  background-color: #188ce8;
+  background-color: var(--color-btn-for-active);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   transition-timing-function: 0.4, 0, 0.2, 1;
@@ -327,6 +338,9 @@ textarea {
 }
 
 .navigation-bar {
+  font-family: var(--main-font-family);
+  font-style: var(--main-font-style);
+  font-weight: var(--main-font-weight);
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
@@ -341,9 +355,9 @@ textarea {
 }
 
 .navigation-link {
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
-  font-weight: 500;
+  font-family: var(--secondary-main-font-family);
+  font-style: var(--main-font-style);
+  font-weight: var(--thread-font-weight);
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
@@ -354,13 +368,13 @@ textarea {
 }
 
 .mail-link {
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
-  font-weight: 500;
+  font-family: var(--secondary-main-font-family);
+  font-style: var(--main-font-style);
+  font-weight: var(--thread-font-weight);
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: #757575;
+  color: var(--secondary-color-for-text);
   display: flex;
   flex-direction: row-reverse;
   margin-right: 30px;
@@ -371,13 +385,13 @@ textarea {
 }
 
 .phone-link {
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
-  font-weight: 500;
+  font-family: var(--secondary-main-font-family);
+  font-style: var(--main-font-style);
+  font-weight: var(--thread-font-weight);
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: #757575;
+  color: var(--secondary-color-for-text);
   display: flex;
   flex-direction: row-reverse;
   transition-duration: 250ms;
@@ -397,7 +411,7 @@ textarea {
 
 .mail-phone__logo {
   margin-right: 10px;
-  fill: #757575;
+  fill: var(--secondary-color-for-text);
 }
 
 .position-link__mail {
@@ -410,7 +424,7 @@ textarea {
 }
 
 .navigation-bar a {
-  color: #000000;
+  color: var(--color-for-links-of-navigation);
 }
 
 .navigation-bar__contacts {
@@ -471,15 +485,15 @@ textarea {
 }
 
 .business {
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
-  font-weight: 900;
+  font-family: var(--secondary-main-font-family);
+  font-style: var(--main-font-style);
+  font-weight: var(--forthly-font-weight);
   font-size: 44px;
   line-height: 1.37;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: #ffffff;
+  color: var(--color-text-for-dark-theme);
   margin-bottom: 30px;
 }
 
@@ -505,9 +519,9 @@ textarea {
 }
 
 .ways {
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
-  font-weight: 700;
+  font-family: var(--secondary-main-font-family);
+  font-style: var(--main-font-style);
+  font-weight: var(--main-font-weight);
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
@@ -517,24 +531,24 @@ textarea {
 }
 
 .ways-option {
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
-  font-weight: 400;
+  font-family: var(--secondary-main-font-family);
+  font-style: var(--main-font-style);
+  font-weight: var(--secondary-font-weight);
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.03em;
-  color: #757575;
+  color: var(--secondary-color-for-text);
   text-transform: none;
 }
 
 .ways-logo {
-  background-color: #f5f4fa;
+  background-color: var(--background-color-ways-logo);
   border-radius: 4px;
 }
 
 .ways-logo-position {
   display: flex;
-  background-color: #f5f4fa;
+  background-color: var(--background-color-ways-logo);
   border-radius: 4px;
   width: 270px;
   height: 120px;
@@ -548,9 +562,9 @@ textarea {
 }
 
 .our-work {
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
-  font-weight: 700;
+  font-family: var(--secondary-main-font-family);
+  font-style: var(--main-font-style);
+  font-weight: var(--main-font-weight);
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
@@ -567,15 +581,15 @@ textarea {
 }
 
 .our-work-description {
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
-  font-weight: 700;
+  font-family: var(--secondary-main-font-family);
+  font-style: var(--main-font-style);
+  font-weight: var(--main-font-weight);
   font-size: 14px;
   line-height: 1.14;
   text-align: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #ffffff;
+  color: var(--color-text-for-dark-theme);
   background-color: rgba(47, 48, 58, 0.8);
   padding-top: 27px;
   padding-left: 83px;
@@ -589,13 +603,13 @@ textarea {
 }
 
 .our-team-position {
-  background-color: #f5f4fa;
+  background-color: var(--background-color-our-team);
   padding-top: 94px;
   padding-bottom: 94px;
 }
 
 .member-card {
-  background-color: #ffffff;
+  background-color: var(--background-color-member-card);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
@@ -606,9 +620,9 @@ textarea {
 }
 
 .our-team {
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
-  font-weight: 700;
+  font-family: var(--secondary-main-font-family);
+  font-style: var(--main-font-style);
+  font-weight: var(--main-font-weight);
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
@@ -618,9 +632,9 @@ textarea {
 }
 
 .team-member {
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
-  font-weight: 500;
+  font-family: var(--secondary-main-font-family);
+  font-style: var(--main-font-style);
+  font-weight: var(--thread-font-weight);
   font-size: 16px;
   line-height: 1, 19;
   text-align: center;
@@ -630,14 +644,14 @@ textarea {
 }
 
 .member-profession {
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
-  font-weight: 400;
+  font-family: var(--secondary-main-font-family);
+  font-style: var(--main-font-style);
+  font-weight: var(--secondary-font-weight);
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #757575;
+  color: var(--secondary-color-for-text);
   margin-top: 10px;
 }
 
@@ -662,19 +676,19 @@ textarea {
 }
 
 .member-logo {
-  fill: #afb1b8;
+  fill: var(--color-clients-logo);
   transition-duration: 250ms;
   transition-timing-function: 0.4, 0, 0.2, 1;
 }
 
 .member-logo-background:hover .member-logo,
 .member-logo-background:focus .member-logo {
-  fill: #ffffff;
+  fill: var(--background-color-member-card);
 }
 
 .member-logo-background:hover,
 .member-logo-background:focus {
-  background-color: #2196f3;
+  background-color: var(--main-color-hover-focus);
 }
 
 .our-clients {
@@ -683,14 +697,14 @@ textarea {
 }
 
 .clients-name-section {
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
-  font-weight: 700;
+  font-family: var(--secondary-main-font-family);
+  font-style: var(--main-font-style);
+  font-weight: var(--main-font-weight);
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #212121;
+  color: var(--main-color);
 }
 
 .clients-position {
@@ -716,7 +730,7 @@ textarea {
 }
 
 .clients-logo {
-  fill: #afb1b8;
+  fill: var(--color-clients-logo);
   transition-duration: 250ms;
   transition-timing-function: 0.4, 0, 0.2, 1;
 }
@@ -733,37 +747,37 @@ textarea {
 }
 
 .footer__position {
-  background-color: #2f303a;
+  background-color: var(--footer-background);
   padding-bottom: 60px;
   padding-top: 60px;
 }
 
 .footer-link {
-  font-family: "Raleway", sans-serif;
-  font-style: normal;
-  font-weight: 700;
+  font-family: var(--main-font-family);
+  font-style: var(--main-font-style);
+  font-weight: var(--main-font-weight);
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  color: #ffffff;
+  color: var(--color-text-for-dark-theme);
 }
 
 .footer__living {
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
-  font-weight: 400;
+  font-family: var(--secondary-main-font-family);
+  font-style: var(--main-font-style);
+  font-weight: var(--secondary-font-weight);
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: #ffffff;
+  color: var(--color-text-for-dark-theme);
   margin-top: 20px;
   width: 231px;
 }
 
 .address-mail {
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
-  font-weight: 400;
+  font-family: var(--secondary-main-font-family);
+  font-style: var(--main-font-style);
+  font-weight: var(--secondary-font-weight);
   font-size: 14px;
   line-height: 1.72;
   letter-spacing: 0.03em;
@@ -771,9 +785,9 @@ textarea {
 }
 
 .address-phone {
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
-  font-weight: 400;
+  font-family: var(--secondary-main-font-family);
+  font-style: var(--main-font-style);
+  font-weight: var(--secondary-font-weight);
   font-size: 14px;
   line-height: 1.72;
   letter-spacing: 0.03em;
@@ -789,14 +803,14 @@ textarea {
 }
 
 .footer__link-sign {
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
-  font-weight: 700;
+  font-family: var(--secondary-main-font-family);
+  font-style: var(--main-font-style);
+  font-weight: var(--main-font-weight);
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #ffffff;
+  color: var(--color-text-for-dark-theme);
   margin-left: 156px;
 }
 
@@ -834,7 +848,7 @@ textarea {
 }
 
 .footer__sign-logo {
-  fill: #ffffff;
+  fill: var(--color-text-for-dark-theme);
 }
 
 .footer__sign-logo-background:hover,
@@ -843,14 +857,14 @@ textarea {
 }
 
 .footer__subscribe-position {
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
-  font-weight: 700;
+  font-family: var(--secondary-main-font-family);
+  font-style: var(--main-font-style);
+  font-weight: var(--main-font-weight);
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: var(--color-text-for-dark-theme);
   margin-left: 154px;
 }
 
@@ -860,16 +874,16 @@ textarea {
 }
 
 .footer-subscribe__input {
-  background-color: #2f303a;
+  background-color: var(--color-for-radius-subscribe);
   width: 358px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-sizing: border-box;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
-  font-weight: 400;
+  font-family: var(--secondary-main-font-family);
+  font-style: var(--main-font-style);
+  font-weight: var(--secondary-font-weight);
   font-size: 16px;
   line-height: 20px;
   display: flex;
@@ -883,7 +897,7 @@ textarea {
 
 .footer-subscribe__button {
   position: relative;
-  background: #2196F3;
+  background: var(--main-color-hover-focus);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   width: 200px;
@@ -894,18 +908,18 @@ textarea {
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
-  font-weight: 700;
+  font-family: var(--secondary-main-font-family);
+  font-style: var(--main-font-style);
+  font-weight: var(--main-font-weight);
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
-  color: #FFFFFF;
+  color: var(--color-text-for-dark-theme);
   border: 0px;
 }
 
 .footer-subscribe__icon {
-  fill: #ffffff;
+  fill: var(--color-text-for-dark-theme);
   margin-left: 10px;
 }
 
@@ -931,7 +945,7 @@ textarea {
 }
 
 .content-maket {
-  background-color: #ffffff;
+  background-color: var(--background-color-member-card);
   box-sizing: border-box;
   display: flex;
   margin-left: -30px;
@@ -959,9 +973,9 @@ textarea {
 }
 
 .portfolio__button-service {
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
-  font-weight: 500;
+  font-family: var(--secondary-main-font-family);
+  font-style: var(--main-font-style);
+  font-weight: var(--thread-font-weight);
   font-size: 16px;
   line-height: 1.63;
   text-align: center;
@@ -975,15 +989,15 @@ textarea {
 }
 
 .portfolio__button-service:hover {
-  background: #2196f3;
-  color: white;
+  background: var(--main-color-hover-focus);
+  color: var(--color-text-for-dark-theme);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
 }
 
 .portfolio__button-service:focus {
-  background: #2196f3;
-  color: white;
+  background: var(--main-color-hover-focus);
+  color: var(--color-text-for-dark-theme);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
 }
@@ -994,13 +1008,13 @@ textarea {
 
 .overlay {
   position: absolute;
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
-  font-weight: 400;
+  font-family: var(--secondary-main-font-family);
+  font-style: var(--main-font-style);
+  font-weight: var(--secondary-font-weight);
   font-size: 18px;
   line-height: 1, 56;
   letter-spacing: 0.03em;
-  color: #ffffff;
+  color: var(--color-text-for-dark-theme);
   background-color: rgba(33, 150, 243, 0.9);
   padding-top: 64px;
   padding-left: 24px;
@@ -1027,9 +1041,9 @@ textarea {
 }
 
 .name-content {
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
-  font-weight: 700;
+  font-family: var(--secondary-main-font-family);
+  font-style: var(--main-font-style);
+  font-weight: var(--main-font-weight);
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
@@ -1037,13 +1051,13 @@ textarea {
 }
 
 .direction {
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
-  font-weight: 400;
+  font-family: var(--secondary-main-font-family);
+  font-style: var(--main-font-style);
+  font-weight: var(--secondary-font-weight);
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
-  color: #757575;
+  color: var(--secondary-color-for-text);
   padding-top: 4px;
 }
 /*# sourceMappingURL=main.css.map */

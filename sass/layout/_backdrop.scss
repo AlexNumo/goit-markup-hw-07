@@ -39,7 +39,7 @@
   top: 50%;
   width: 528px;
   height: 581px;
-  background-color: #ffffff;
+  background-color: var(--background-color-for-backdrop);
   transform: translate(-50%, -50%);
   animation-name: animation-backdrop;
   animation-duration: 300ms;
@@ -82,9 +82,9 @@
 }
 
 .data-form {
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
-  font-weight: 700;
+  font-family: var(--secondary-main-font-family);
+  font-style: var(--main-font-style);
+  font-weight: var(--main-font-weight);
   font-size: 20px;
   line-height: 1.15;
   text-align: center;
@@ -96,13 +96,13 @@
   display: flex;
   flex-direction: column;
   margin-top: 12px;
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
+  font-family: var(--secondary-main-font-family);
+  font-style: var(--main-font-style);
   font-weight: 400;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
-  color: #757575;
+  color: var(--secondary-color-for-text);
 }
 
 .modal-form__position-name {
@@ -163,13 +163,13 @@
 }
 
 .modal-form__checkbox-label {
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
+  font-family: var(--secondary-main-font-family);
+  font-style: var(--main-font-style);
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: #757575;
+  color: var(--secondary-color-for-text);
   display: flex;
   align-items: baseline;
   justify-content: center;
@@ -180,14 +180,14 @@
 }
 
 .modal-form__button {
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
-  font-weight: 700;
+  font-family: var(--secondary-main-font-family);
+  font-style: var(--main-font-style);
+  font-weight: var(--main-font-weight);
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
-  color: #ffffff;
-  background-color: #2196f3;
+  color: var(--color-text-for-dark-theme);
+  background-color: var(--main-color-hover-focus);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border: 0px;
@@ -201,7 +201,7 @@
 
 .modal-form__button:hover,
 .modal-form__button:focus {
-  background-color: #188ce8;
+  background-color: var(--color-btn-for-active);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   transition-timing-function: (0.4, 0, 0.2, 1);

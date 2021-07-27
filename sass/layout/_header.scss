@@ -1,4 +1,7 @@
 .navigation-bar {
+  font-family: var(--main-font-family);
+  font-style: var(--main-font-style);
+  font-weight: var(--main-font-weight);
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
@@ -13,9 +16,9 @@
 }
 
 .navigation-link {
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
-  font-weight: 500;
+  font-family: var(--secondary-main-font-family);
+  font-style: var(--main-font-style);
+  font-weight: var(--thread-font-weight);
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
@@ -26,13 +29,13 @@
 }
 
 .mail-link {
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
-  font-weight: 500;
+  font-family: var(--secondary-main-font-family);
+  font-style: var(--main-font-style);
+  font-weight: var(--thread-font-weight);
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: #757575;
+  color: var(--secondary-color-for-text);
   display: flex;
   flex-direction: row-reverse;
   margin-right: 30px;
@@ -43,13 +46,13 @@
 }
 
 .phone-link {
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
-  font-weight: 500;
+  font-family: var(--secondary-main-font-family);
+  font-style: var(--main-font-style);
+  font-weight: var(--thread-font-weight);
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: #757575;
+  color: var(--secondary-color-for-text);
   display: flex;
   flex-direction: row-reverse;
   transition-duration: 250ms;
@@ -69,7 +72,7 @@
 
 .mail-phone__logo {
   margin-right: 10px;
-  fill: #757575;
+  fill: var(--secondary-color-for-text);
 }
 
 .position-link__mail {
@@ -82,7 +85,7 @@
 }
 
 .navigation-bar a {
-  color: #000000;
+  color: var(--color-for-links-of-navigation);
 }
 
 .navigation-bar__contacts {

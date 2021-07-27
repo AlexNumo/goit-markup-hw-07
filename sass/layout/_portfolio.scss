@@ -20,7 +20,7 @@
 }
 
 .content-maket {
-  background-color: #ffffff;
+  background-color: var(--background-color-member-card);
   box-sizing: border-box;
   display: flex;
   margin-left: -30px;
@@ -49,9 +49,9 @@
 }
 
 .portfolio__button-service {
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
-  font-weight: 500;
+  font-family: var(--secondary-main-font-family);
+  font-style: var(--main-font-style);
+  font-weight: var(--thread-font-weight);
   font-size: 16px;
   line-height: 1.63;
   text-align: center;
@@ -65,16 +65,16 @@
 }
 
 .portfolio__button-service:hover {
-  background: #2196f3;
-  color: white;
+  background: var(--main-color-hover-focus);
+  color: var(--color-text-for-dark-theme);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
 }
 
 .portfolio__button-service:focus {
-  background: #2196f3;
-  color: white;
+  background: var(--main-color-hover-focus);
+  color: var(--color-text-for-dark-theme);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
@@ -86,13 +86,13 @@
 
 .overlay {
   position: absolute;
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
-  font-weight: 400;
+  font-family: var(--secondary-main-font-family);
+  font-style: var(--main-font-style);
+  font-weight: var(--secondary-font-weight);
   font-size: 18px;
   line-height: 1, 56;
   letter-spacing: 0.03em;
-  color: #ffffff;
+  color: var(--color-text-for-dark-theme);
   background-color: rgba(33, 150, 243, 0.9);
   padding-top: 64px;
   padding-left: 24px;
@@ -119,9 +119,9 @@
 }
 
 .name-content {
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
-  font-weight: 700;
+  font-family: var(--secondary-main-font-family);
+  font-style: var(--main-font-style);
+  font-weight: var(--main-font-weight);
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
@@ -129,12 +129,12 @@
 }
 
 .direction {
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
-  font-weight: 400;
+  font-family: var(--secondary-main-font-family);
+  font-style: var(--main-font-style);
+  font-weight: var(--secondary-font-weight);
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
-  color: #757575;
+  color: var(--secondary-color-for-text);
   padding-top: 4px;
 }

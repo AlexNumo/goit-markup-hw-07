@@ -1,11 +1,11 @@
 .our-team-position {
-  background-color: #f5f4fa;
+  background-color: var(--background-color-our-team);
   padding-top: 94px;
   padding-bottom: 94px;
 }
 
 .member-card {
-  background-color: #ffffff;
+  background-color: var(--background-color-member-card);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -17,9 +17,9 @@
 }
 
 .our-team {
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
-  font-weight: 700;
+  font-family: var(--secondary-main-font-family);
+  font-style: var(--main-font-style);
+  font-weight: var(--main-font-weight);
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
@@ -29,9 +29,9 @@
 }
 
 .team-member {
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
-  font-weight: 500;
+  font-family: var(--secondary-main-font-family);
+  font-style: var(--main-font-style);
+  font-weight: var(--thread-font-weight);
   font-size: 16px;
   line-height: 1, 19;
   text-align: center;
@@ -41,14 +41,14 @@
 }
 
 .member-profession {
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
-  font-weight: 400;
+  font-family: var(--secondary-main-font-family);
+  font-style: var(--main-font-style);
+  font-weight: var(--secondary-font-weight);
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #757575;
+  color: var(--secondary-color-for-text);
   margin-top: 10px;
 }
 
@@ -73,17 +73,17 @@
 }
 
 .member-logo {
-  fill: #afb1b8;
+  fill: var(--color-clients-logo);
   transition-duration: 250ms;
   transition-timing-function: (0.4, 0, 0.2, 1);
 }
 
 .member-logo-background:hover .member-logo,
 .member-logo-background:focus .member-logo {
-  fill: #ffffff;
+  fill: var(--background-color-member-card);
 }
 
 .member-logo-background:hover,
 .member-logo-background:focus {
-  background-color: #2196f3;
+  background-color: var(--main-color-hover-focus);
 }

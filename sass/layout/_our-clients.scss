@@ -4,14 +4,14 @@
 }
 
 .clients-name-section {
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
-  font-weight: 700;
+  font-family: var(--secondary-main-font-family);
+  font-style: var(--main-font-style);
+  font-weight: var(--main-font-weight);
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #212121;
+  color: var(--main-color);
 }
 
 .clients-position {
@@ -37,7 +37,7 @@
 }
 
 .clients-logo {
-  fill: #afb1b8;
+  fill: var(--color-clients-logo);
   transition-duration: 250ms;
   transition-timing-function: (0.4, 0, 0.2, 1);
 }

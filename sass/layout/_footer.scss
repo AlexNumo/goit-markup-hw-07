@@ -1,35 +1,35 @@
 .footer__position {
-  background-color: #2f303a;
+  background-color: var(--footer-background);
   padding-bottom: 60px;
   padding-top: 60px;
 }
 
 .footer-link {
-  font-family: "Raleway", sans-serif;
-  font-style: normal;
-  font-weight: 700;
+  font-family: var(--main-font-family);
+  font-style: var(--main-font-style);
+  font-weight: var(--main-font-weight);
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  color: #ffffff;
+  color: var(--color-text-for-dark-theme);
 }
 
 .footer__living {
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
-  font-weight: 400;
+  font-family: var(--secondary-main-font-family);
+  font-style: var(--main-font-style);
+  font-weight: var(--secondary-font-weight);
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: #ffffff;
+  color: var(--color-text-for-dark-theme);
   margin-top: 20px;
   width: 231px;
 }
 
 .address-mail {
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
-  font-weight: 400;
+  font-family: var(--secondary-main-font-family);
+  font-style: var(--main-font-style);
+  font-weight: var(--secondary-font-weight);
   font-size: 14px;
   line-height: 1.72;
   letter-spacing: 0.03em;
@@ -37,9 +37,9 @@
 }
 
 .address-phone {
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
-  font-weight: 400;
+  font-family: var(--secondary-main-font-family);
+  font-style: var(--main-font-style);
+  font-weight: var(--secondary-font-weight);
   font-size: 14px;
   line-height: 1.72;
   letter-spacing: 0.03em;
@@ -55,14 +55,14 @@
 }
 
 .footer__link-sign {
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
-  font-weight: 700;
+  font-family: var(--secondary-main-font-family);
+  font-style: var(--main-font-style);
+  font-weight: var(--main-font-weight);
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #ffffff;
+  color: var(--color-text-for-dark-theme);
   margin-left: 156px;
 }
 
@@ -100,7 +100,7 @@
 }
 
 .footer__sign-logo {
-  fill: #ffffff;
+  fill: var(--color-text-for-dark-theme);
 }
 
 .footer__sign-logo-background:hover,
@@ -108,34 +108,34 @@
   background-color: var(--main-color-hover-focus);
 }
 
-.footer__subscribe-position{
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
-  font-weight: 700;
+.footer__subscribe-position {
+  font-family: var(--secondary-main-font-family);
+  font-style: var(--main-font-style);
+  font-weight: var(--main-font-weight);
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: var(--color-text-for-dark-theme);
   margin-left: 154px;
 }
 
-.footer-subscribe{
+.footer-subscribe {
   margin-left: 93px;
   margin-top: 20px;
 }
 
-.footer-subscribe__input{
-  background-color: #2f303a;
+.footer-subscribe__input {
+  background-color: var(--color-for-radius-subscribe);
   width: 358px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-sizing: border-box;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
-  font-weight: 400;
+  font-family: var(--secondary-main-font-family);
+  font-style: var(--main-font-style);
+  font-weight: var(--secondary-font-weight);
   font-size: 16px;
   line-height: 20px;
   display: flex;
@@ -147,9 +147,9 @@
   padding-bottom: 15px;
 }
 
-.footer-subscribe__button{
+.footer-subscribe__button {
   position: relative;
-  background: #2196F3;
+  background: var(--main-color-hover-focus);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   width: 200px;
@@ -160,17 +160,17 @@
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
-  font-weight: 700;
+  font-family: var(--secondary-main-font-family);
+  font-style: var(--main-font-style);
+  font-weight: var(--main-font-weight);
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
-  color: #FFFFFF;
+  color: var(--color-text-for-dark-theme);
   border: 0px;
 }
 
-.footer-subscribe__icon{
-  fill: #ffffff;
+.footer-subscribe__icon {
+  fill: var(--color-text-for-dark-theme);
   margin-left: 10px;
 }
